@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Selma's Corner!</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+  <!-- CSS link -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="light">
+
+  <main class="container">
+
+    <header class="site-header">
+      <div class="greeting">
+        <span class="hi">Hi,</span>
+        <h2 class="welcome">Welcome!</h2>
+      </div>
+
+      <div class="header-right">
+        <h1 class="name">Selma Nghinamanu</h1>
+        <p class="tagline">Emerging Entrepreneur • Tech & Fashion </p>
+      </div>
+    </header>
+
+    <section class="profile-area">
+      <div class="profile-card">
+        <div class="profile-frame">
+          <!-- image file -->
+          <img src="images/ndilly.jpeg" alt="Selma profile picture" class="profile-img">
+        </div>
+    <div class="controls">
+        <button onclick="changeFontSize('increase')">A+</button>
+        <button onclick="changeFontSize('decrease')">A-</button>
+        <button onclick="changeFontSize('reset')">Reset</button>
+    </div>
+        <div class="profile-actions">
+          <a class="cta-btn" href="#contact">Contact</a>
+          <a class="cta-outline" href="https://github.com/Ndilly" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    
+      <div class="about-card">
+        <h3>About</h3>
+        <p class="bio">
+         I'm passionate about building purposeful brands that merge style, faith, and technology. Currently developing side projects to better advance my skills. Committed to delivering value-driven products with aesthetic design & modern tech.
+        </p>
+
+        <div class="two-col">
+          <div>
+            <h4>Hobbies</h4>
+            <ul class="hobbies">
+              <li>Reading & journaling</li>
+              <li>Coding mini projects</li>
+              <li>Design & UI/UX</li>
+              <li>Fashion styling</li>
+              <li>Sketching</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4>Contact</h4>
+            <p id="contact">ndillyyy.n@gmail.com</p>
+            <p>+264 81  665 7460 </p>
+          </div>
+        </div>
+
+        <h4 class="projects-title">Projects</h4>
+        <div class="projects">
+          <!-- project cards --->
+          <div class="project-card" data-project="1">
+            <h5>Leni's Bracelets (brand)</h5>
+            <p>Handmade jewelry.</p>
+            <button class="open-project" data-target="modal-1">View</button>
+          </div>
+
+          <div class="project-card" data-project="2">
+            <h5>Mindset Tracker (app)</h5>
+            <p>Simple day & mindset tracking .</p>
+            <button class="open-project" data-target="modal-2">Ongoing</button>
+          </div>
+        </div>
+
+          <div class="project-card" data-project="3">
+            <h5>ITGrl (brand)</h5>
+            <p>Aesthetic polaroid pictures & cute packaging.</p>
+            <button class="open-project" data-target="modal-3">View</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="theme-controls">
+        <button id="theme-toggle" class="theme-btn"> Dark Mode</button>
+      </div>
+      <p>Made by Selma - <a href="https://github.com/Ndilly" target="_blank" rel="noopener">Github</a></p>
+      
+    
+    </footer>
+  </main>
+
+  <!-- Modal -->
+  <div id="modal-1" class="modal">
+    <div class="modal-inner">
+      <button class="modal-close">&times;</button>
+      <h3>Leni's Bracelets</h3>
+      <p>Handmade, aesthetic jewelry with a sprinkle of love. </p>
+       <a href="https://ndillyyy.github.io/Leni-s-Bracelets" target="_blank" class="cute-button">
+       💖 View 💖</a>
+    </div>
+  </div>
+
+  <div id="modal-2" class="modal">
+    <div class="modal-inner">
+      <button class="modal-close">&times;</button>
+      <h3>Day Tracker</h3>
+      <p>Simple app for tracking your day. </p>
+      <a href="https://daytracking.netlify.app" target="_blank" class="cute-button">
+       💖 View 💖</a>
+    </div>
+  </div>
+
+  
+  <div id="modal-3" class="modal">
+    <div class="modal-inner">
+      <button class="modal-close">&times;</button>
+      <h3>ITGrl</h3>
+      <p>Polaroid brand — polaroid pictures, films, magazines, cute packaging. Cards.</p>
+      <a href="https://itgrl-site.netlify.app"target="_blank"
+      class="cute-button">
+     💖 View 💖</a>
+     <a href="https://itgrr.netlify.app/" target="_blank" class="cute-button">
+      💖View 💖</a>
+    </div>
+  </div>
+
+  <!-- JS link -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
